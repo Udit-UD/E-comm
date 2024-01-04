@@ -26,5 +26,3 @@ export const LoginPage = () => {
     </Box>
   )
 }
-
-//backgroundColor: "rgba(255,255,255,0.5)", backdropFilter:"blur(20px)", boxShadow:"0 1px 12px rgba(0,0,0,0.25)", border:"1px solid rgba(255,255,255,0.3)"
