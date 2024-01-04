@@ -17,7 +17,10 @@ export const Navbar = () => {
   }
   return (
     <Box p="1rem" display="flex" width="100%" gap="1rem" justifyContent="space-between">
-        <Typography fontSize="1.5rem" sx={{ cursor:"pointer" }} onClick={()=>navigate("/home")}>
+        <Typography fontSize="1.5rem" 
+          sx={{ cursor:"pointer", textDecoration:"none", ":hover":{textDecoration:"underline"} }} 
+          onClick={()=>navigate("/home")}
+        >
           Udit.Dev
         </Typography>
         <Box>
@@ -35,3 +38,6 @@ export const Navbar = () => {
     </Box>
   )
 }
+
+
+// https://build-with-innovation.netlify.app/

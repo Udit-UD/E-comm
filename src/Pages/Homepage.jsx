@@ -31,6 +31,7 @@ export const Homepage = () => {
       ;(async() => {
         try {
           setIsLoading(true);
+          setFilterChoice(0);
           const response = await fetch(`https://dummyjson.com/products/search?q=${searchStr}`, {
             method: "GET",
           });
