@@ -7,6 +7,7 @@ import "./App.css";
 import { themeSettings } from './theme';
 import { createTheme } from "@mui/material/styles";
 import { Cart } from './Pages/Cart';
+import ProtectedRoute from './Pages/ProtectedRoute';
 
 
 function App() {
@@ -18,9 +19,11 @@ function App() {
       <ThemeProvider theme={theme}>
       <CssBaseline />
         <Routes>
+          <Route element={<ProtectedRoute />}> 
+            <Route path="/home" element={<Homepage />} />
+            <Route path="/cart" element={<Cart />} />
+          </Route>
           <Route path="/" element={<LoginPage />} />
-          <Route path="/home" element={<Homepage />} />
-          <Route path="/cart" element={<Cart />} />
         </Routes>
       </ThemeProvider>
       </BrowserRouter>
