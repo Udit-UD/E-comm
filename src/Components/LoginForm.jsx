@@ -43,7 +43,7 @@ export const LoginForm = () => {
                         }
                     })
                 );
-                navigate("/home");
+                navigate("/");
             }
             console.log(data);
         }

@@ -13,13 +13,13 @@ export const Navbar = () => {
   
   const handleLogout = ()=>{
     dispatch(setLogout());
-    navigate("/");
+    navigate("/login");
   }
   return (
     <Box p="1rem" display="flex" width="100%" gap="1rem" justifyContent="space-between">
         <Typography fontSize="1.5rem" 
           sx={{ cursor:"pointer", textDecoration:"none", ":hover":{textDecoration:"underline"} }} 
-          onClick={()=>navigate("/home")}
+          onClick={()=>navigate("/")}
         >
           Udit.Dev
         </Typography>
@@ -38,6 +38,3 @@ export const Navbar = () => {
     </Box>
   )
 }
-
-
-// https://build-with-innovation.netlify.app/

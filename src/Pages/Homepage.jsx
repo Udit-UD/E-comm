@@ -36,7 +36,6 @@ export const Homepage = () => {
             method: "GET",
           });
           const data = await response.json();
-          console.log(data);
           setProducts(data.products);
           setIsLoading(false);
         } catch (err) {

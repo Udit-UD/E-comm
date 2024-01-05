@@ -20,10 +20,10 @@ function App() {
       <CssBaseline />
         <Routes>
           <Route element={<ProtectedRoute />}> 
-            <Route path="/home" element={<Homepage />} />
+            <Route path="/" element={<Homepage />} />
             <Route path="/cart" element={<Cart />} />
           </Route>
-          <Route path="/" element={<LoginPage />} />
+          <Route path="/login" element={<LoginPage />} />
         </Routes>
       </ThemeProvider>
       </BrowserRouter>
